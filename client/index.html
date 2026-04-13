@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes & Todos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Notes &amp; Todos</h1>
+
+  <div class="section">
+    <h2>Notes</h2>
+    <form id="note-form">
+      <input id="note-title" type="text" placeholder="Title" required/>
+      <textarea id="note-content" placeholder="Content" required></textarea>
+      <button type="submit">Add note</button>
+    </form>
+    <ul id="notes-list"></ul>
+  </div>
+
+  <div class="section">
+    <h2>Todo lists</h2>
+    <form id="todo-form">
+      <input id="todo-title" type="text" placeholder="List title" required/>
+      <div id="tasks-container">
+        <input class="task-input" type="text" placeholder="Task 1"/>
+      </div>
+      <button type="button" id="add-task-btn">+ Add task</button>
+      <button type="submit">Create todo list</button>
+    </form>
+    <ul id="todos-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
